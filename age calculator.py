@@ -1,0 +1,5 @@
+name = input('what is your name? ')
+birth_year = input('when were you born? ')
+age = 2020 - int(birth_year)
+print(name + ' is ' + str(age) + ' years old')
+input('press any key to exit ')
