@@ -6,13 +6,16 @@ while True:
     tempgrade = input('input grade percentage... ')
     try:
         tempgrade = int(tempgrade)
+        if tempgrade > 100 or tempgrade < 0:
+            print('invalid number...  ')
+        else:
+            gradestotal += 1
+            grade += tempgrade
     except:
         if tempgrade == 'stop':
             break
         else:
             print('type in stop or a grade percent without the sign... ')
-    gradestotal += 1
-    grade += tempgrade
 y = grade / gradestotal
 y = round(y)
 print ('Your average grade is ' + str(y) + ' percent')
